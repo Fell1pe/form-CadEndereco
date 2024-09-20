@@ -29,30 +29,12 @@ Esse código é como um pequeno sistema de controle de acesso, onde você pode a
 * Nesse código começamos a criar uma verificação de CEP a partir da API(https://viacep.com.br/) do viacep nesse projeto criamos um códigó javascript que primeiramente 
 
     * Cria uma const para limpar formulário já realizado.
-
+![limpar](1jv.png)
 
     * cria verificação para constar se o CEP é valido:
 
     * cria uma função para verificar o tamanho do cep:
 
-
-## Adição da verificação de email:
-
-
-## confira o código abaixo:
-
-
-
-
-## Função excluir e editar:
-
-
-
-
-
-## Adição de CPF
-
-* 
 
 
 ## Recursos:
