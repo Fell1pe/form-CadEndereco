@@ -34,15 +34,18 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 
 const pesquisarCep =async() => {
     limparFormlario();
-    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`; //Cria uma const para puxar a url da API do viaCep dizendo também onde deve ser adicionado o valor obtido nas ações posteriores dentro da API
     if(cepValido(cep.value)){
         const dados = await fetch(url);
+            // Cria-se uma constante dados onde fetch vê se a URL da APi acima esta mandando um valor real com base nas infomações dadas a propria pela função eNumero e cepValido, onde o wait é usado para que o código não continue sendo executado até que fetch retorne com a promise
         const addres = await dados.json();
-
+            // Cria-se uma costante addres onde novamente é utilizado um await para parar a função até que dados.json retorne com o valor desejado, onde json irá interpretar a resposta dada no formulário para transforma-lá em texto é assim preceguir com os valores no código
     if(addres.hasOwnProperty('erro')){
+        // Esse if utiliza da contante addres, com o valor obtido na própia ele verifica se na API foi fornecida uma mensagem de erro, caso essa afirmação seja verdadeira então if será = a true
         alert('CEP não encontado')  
     }
     else{
+        // Esse else é utilizado para o preenchimento do formulário caso o if anterior esteja incorreto
         preencherFormulario(addres);
     }
 }else{
