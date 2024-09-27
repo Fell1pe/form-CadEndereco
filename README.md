@@ -38,8 +38,7 @@ Nesse projeto utilizamos de uma [API](https://viacep.com.br) para criar uma veri
 
     ### cria uma função para verificar o tamanho do cep:
 
-     ![tamanho](img/tamanho.png)
-     ![Tamanho](https://github.com/Fell1pe/form-CadEndereco/blob/main/img/tamanho.PNG)
+    ![Tamanho](https://github.com/Fell1pe/form-CadEndereco/blob/main/img/tamanho.PNG)
 
 * Nessa parte do codigo é criado duas constantes para fazerr a verificação da qauntidade de caractéries do CEP inserido e também é verificado se o CEP contem apenas números caso não tenha apenas número ele irá ignorar os caracteres que não sejam números limitando o tamanho a 8 digitos. 
 
@@ -51,26 +50,26 @@ Nesse projeto utilizamos de uma [API](https://viacep.com.br) para criar uma veri
     * ja dentro dessa const foi criada outra constante para puxar uma url da API utilizada no projeto nesse caso sendo o viaCep, onde dentro dessa url é puxada uma função cep.value para indicar onde o CEP informado pelo usúario deve ser colocado dentro da URL.
     <br>
 
-    ![validação](img/1prtvalida.png)
+    ![validação](https://github.com/Fell1pe/form-CadEndereco/blob/main/img/1prtvalida.PNG)
 
     * logo após é criado um if que puxa a const cepValido atribuindo a ela o nome cep.value utilizado acima na verificação da URL, ja dentro do mesmo é criado outra constante chamada de *dados* onde utiliza de um await que para que enquanto a fetch não retorne com uma promise para o códiigo, ele não continuara a ser execuctado. Logo após é inserido um fetch que vê se os números encontrados pela função eNumero agora colocados na URL são verdadeiros.
     * Em seguida é criado também outra const addres que novamente é utlizado um await para fazer a verificação da const para assim ela poder proceguir com o código, logo após é puxa a função criada ateriormente ´dados´ e e atribuida a própria uma caracteristica do javascript chamada ´json´ que transforma todas as informações obtidas anteriormente pela const.dados em texto.
     <br>
 
-    ![validação](img/2prtvalida.png)
+    ![validação](https://github.com/Fell1pe/form-CadEndereco/blob/main/img/2prtvalida.PNG)
 
     * Em seguida cria-se um if que utiliza a const addres já criada e adiciona uma propiedade chamada ´hasOwnProperty´ que verifica se dentro da API logo após a inserção dos dados não foi omitido uma mensagem de erro, caso a mesagem seja verdadeira if mostra um alert(´CEP não é valido´).
         * Caso contrario ele rodara um else que usara a função preencherFormulário puxando os valores de addres para dentro dos campos já pré setados anteriormente.
     * também caso o if que puxa a variavel cepValido não seja verdadeira rodará um else mostrando um alert(´CEP incorreto´).
     <br>
 
-    ![validação](img/3prtvalida.png)
+    ![validação](https://github.com/Fell1pe/form-CadEndereco/blob/main/img/3prtvalida.PNG)
 
     * No final do código é executada uma ação para fazer o preenchimento automático do formulário para que as informações sejam inseridas nos capos logo após o usuário deixar de selecionar o campo de CEP.
 
     <br>
 
-    ![validação](img/4prtvalida.png)
+    ![validação](https://github.com/Fell1pe/form-CadEndereco/blob/main/img/4prtvalida.PNG)
 
 
 ## Recursos:
