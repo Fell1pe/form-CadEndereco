@@ -39,9 +39,9 @@ const pesquisarCep =async() => {
         const dados = await fetch(url);
             // Cria-se uma constante dados onde fetch vê se a URL da APi acima esta mandando um valor real com base nas infomações dadas a propria pela função eNumero e cepValido, onde o wait é usado para que o código não continue sendo executado até que fetch retorne com a promise
         const addres = await dados.json();
-            // Cria-se uma costante addres onde novamente é utilizado um await para parar a função até que dados.json retorne com o valor desejado, onde json irá interpretar a resposta dada no formulário para transforma-lá em texto é assim preceguir com os valores no código
+            // Cria-se uma costante addres onde novamente é utilizado um await para parar a função até que dados.json retorne com o valor desejado, onde json irá interpretar a resposta dada no formulário para transforma-lá em texto é assim proceguir com os valores no código
     if(addres.hasOwnProperty('erro')){
-        // Esse if utiliza da contante addres, com o valor obtido na própia ele verifica se na API foi fornecida uma mensagem de erro, caso essa afirmação seja verdadeira então if será = a true
+        // Esse if utiliza da constante addres, com o valor obtido na própia ele verifica se na API foi fornecida uma mensagem de erro, caso essa afirmação seja verdadeira então if será = a true
         alert('CEP não encontado')  
     }
     else{
