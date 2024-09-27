@@ -39,6 +39,7 @@ Nesse projeto utilizamos de uma [API](https://viacep.com.br) para criar uma veri
     ### cria uma função para verificar o tamanho do cep:
 
      ![tamanho](img/tamanho.png)
+     ![Tamanho](https://github.com/Fell1pe/form-CadEndereco/blob/main/img/tamanho.PNG)
 
 * Nessa parte do codigo é criado duas constantes para fazerr a verificação da qauntidade de caractéries do CEP inserido e também é verificado se o CEP contem apenas números caso não tenha apenas número ele irá ignorar os caracteres que não sejam números limitando o tamanho a 8 digitos. 
 
