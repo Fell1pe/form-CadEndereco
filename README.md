@@ -79,7 +79,7 @@ Nesse projeto utilizamos de uma [API](https://viacep.com.br) para criar uma veri
 
 **Linkedin**
 
-[publicação do projeto no linkedin]()
+[publicação do projeto no linkedin](https://www.linkedin.com/posts/fellipe-zanin-1b1a7728b_github-fell1peform-cadendereco-activity-7247390421100744704-gYo9?utm_source=share&utm_medium=member_desktop)
 
 ## Autores
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/140712280?v=4" width=115><br><sub>Fellipe Gabriel Zanin</sub>](https://github.com/Fell1pe) |
